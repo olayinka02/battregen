@@ -49,7 +49,7 @@ function Footer() {
             </div>
 
             <div className='flex flex-col w-full '>
-                <h1 className='text-3xl pb-8 font-medium'>Leave your details and we'll get back to you shortly!</h1>
+                <h1 className='text-3xl pb-8 font-medium'>Leave your details and we will get back to you shortly!</h1>
                 
                 <form className='flex flex-col gap-3'>
                     <label htmlFor="name" className='text-xs pb-1'>Name</label>

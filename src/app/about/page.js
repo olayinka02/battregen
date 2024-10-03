@@ -27,7 +27,7 @@ export default function About() {
              
           }
           subhead={<span className="leading-3">Our mission is to recondition batteries sustainably, streamline maintenance, recycle materials, 
-          and reduce the costs associated with the upkeep of electric micro-mobility vehicles and industrial mover batteries."</span>
+          and reduce the costs associated with the upkeep of electric micro-mobility vehicles and industrial mover batteries.</span>
           }
       
           
