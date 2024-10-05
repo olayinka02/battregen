@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react';
+
 import HeroSection from "./components/herosection";
 import Navbar from "./components/Navbar";
 import welcomeimage from "./assets/welcomeimage.svg";
@@ -21,12 +21,6 @@ import Footer from "./components/footer";
 
 export default function Home() {
 
-  // const sectionRef = useRef(null);
-
-  // const scrollToSection = () => {
-  //   sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  // };
-
   return (
     <div className="w-full bg-white py-0 mt-0 flex flex-col justify-center items-center h-auto">
        <Navbar />
@@ -34,7 +28,7 @@ export default function Home() {
         heroTitle="Lead Acid Battery Revitalization: Eco-Friendly Solutions "
         paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
         imageSrc={heroimage}
-        buttonOne= {{ text: "CONTACT" }}
+        buttonOne= {{ text: "CONTACT US" }}
         buttonTwo={{ text: "LITHIUM SOLUTION", link: "/libr" }}
         headercolor="brandblack"
       />

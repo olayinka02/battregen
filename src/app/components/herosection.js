@@ -2,7 +2,7 @@
 import React from "react";
 //import Link from "next/link";
 import Image from "next/image";
-import { Link,animateScroll as scroll, scrollSpy } from 'react-scroll';
+import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useRouter } from 'next/navigation';
 
 const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, headercolor, textcolor,backgroundcolor,paddingBottom }) => {
@@ -20,14 +20,14 @@ const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, hea
           <div className="flex space-x-4">
             {buttonOne && (
               
-                <button onClick={scrollToBottom} className="flex-nowrap text-brandblack px-4 py-3 rounded-full text-xs bg-textgreen " >
+                <button onClick={scrollToBottom} className="text-brandblack px-4 py-3 rounded-full text-xs bg-textgreen " >
                  {buttonOne.text}
                 </button>
              
             )}
             {buttonTwo && (
               <Link href={buttonTwo.link}>
-                <button className="flex-nowrap bg-black text-white px-4 py-3  rounded-full text-xs">
+                <button className="bg-black text-white px-4 py-3 rounded-full text-xs">
                   {buttonTwo.text}
                 </button>
               </Link>

@@ -51,7 +51,7 @@
   color: white; /* Optional: text color for better visibility */
 }
 a {
-  color: white !important;
+  color: white;
 }
 
 a :active{

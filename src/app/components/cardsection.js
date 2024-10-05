@@ -31,8 +31,8 @@ const CardSection = () => {
     ];
 
     return (
-        <section className="  my-28 lg:px-12 lg:mx-16 md:mx-22 md:px-10">
-            <div className="w-full px-2  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3  ">
+        <section className="  my-28 lg:px-12 lg:mx-16 md:mx-22 md:px-24">
+            <div className="w-full px-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  ">
                 {cardsData.map((card, index) => (
                     <Card
                         key={index}

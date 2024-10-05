@@ -8,8 +8,8 @@ import gallery4 from "../assets/gallery4.svg"; // Assuming this is the same imag
 
 function Gallery({buttonOne}) {
   return (
-    <div className='w-full flex flex-col gap-4 bg-brandblack py-28 text-white h-auto'>
-        <div className='grid grid-cols-1 px-4 lg:gap-10 lg:px-28 md:px-20 md:grid-cols-2 md:gap-8 lg:grid-cols-2 justify-center'>
+    <div className='w-full flex flex-col gap-4 bg-brandblack py-28 text-white   h-auto'>
+        <div className='grid grid-cols-1 px-4 lg:gap-10 lg:px-28 md:mx-20 md:grid-cols-2 md:gap-2 md:px-3  md:w-4/5 lg:grid-cols-2 justify-center'>
             <div className='flex flex-col'>
                 <h1 className='text-3xl'>Gallery</h1>
                 <p className='text-xs font-extralight pt-3'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -28,7 +28,7 @@ function Gallery({buttonOne}) {
         </div>
 
         {/* Image Gallery */}
-        <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-4 px-4 lg:px-28 md:px-20 py-4'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-4 px-4 lg:px-28 md:mx-20 py-4'>
             <div className='flex flex-col'>
                 <h1 className='text-xs pb-2'>Before revitalization</h1>
                 <Image src={gallery1} alt="Gallery Image 1" />
