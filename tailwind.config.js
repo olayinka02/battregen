@@ -22,7 +22,9 @@ module.exports = {
           inputfield: '#E7E7E7',
           inputfieldstroke: '#DDDDDD',
           inputfieldtext: '#8D928B',
-
+          navbarstroke: '#5F5F5F',
+          rolebg: '#F8F8F8',
+          roletext: '#78A401',
 
   
   

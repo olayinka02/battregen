@@ -6,7 +6,7 @@ import gallery2 from "../assets/gallery2.svg";
 import gallery3 from "../assets/gallery3.svg";
 import gallery4 from "../assets/gallery4.svg"; // Assuming this is the same image for demonstration
 
-function Gallery() {
+function Gallery({buttonOne}) {
   return (
     <div className='w-full flex flex-col gap-4 bg-brandblack py-28 text-white h-auto'>
         <div className='grid grid-cols-1 px-4 lg:gap-10 lg:px-28 md:px-20 md:grid-cols-2 md:gap-8 lg:grid-cols-2 justify-center'>
@@ -14,13 +14,17 @@ function Gallery() {
                 <h1 className='text-3xl'>Gallery</h1>
                 <p className='text-xs font-extralight pt-3'>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div className='flex flex-col lg:items-end md:items-end pt-4'>
-                <Link href="/">
-                    <button className="text-brandblack px-4 py-3 rounded-full text-xs bg-brandgreen">
-                        VIEW GALLERY
-                    </button>
-                </Link>
-            </div>
+            <div className="flex flex-col lg:items-end md:items-end pt-4">
+        {buttonOne && (
+          <Link href={buttonOne.link}>
+            <button className="flex-nowrap text-brandblack px-4 py-3 rounded-full text-xs bg-brandgreen">
+              {buttonOne.text}
+            </button>
+          </Link>
+        )}
+        
+        
+      </div>
         </div>
 
         {/* Image Gallery */}

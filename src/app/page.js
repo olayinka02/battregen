@@ -1,3 +1,5 @@
+"use client"
+import React, { useRef } from 'react';
 import HeroSection from "./components/herosection";
 import Navbar from "./components/Navbar";
 import welcomeimage from "./assets/welcomeimage.svg";
@@ -14,57 +16,71 @@ import Footer from "./components/footer";
 
 
 
+
+
+
 export default function Home() {
+
+  // const sectionRef = useRef(null);
+
+  // const scrollToSection = () => {
+  //   sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // };
+
   return (
     <div className="w-full bg-white py-0 mt-0 flex flex-col justify-center items-center h-auto">
-      <Navbar />
+       <Navbar />
       <HeroSection
         heroTitle="Lead Acid Battery Revitalization: Eco-Friendly Solutions "
         paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
         imageSrc={heroimage}
-        buttonOne={{ text: "CONTACT US", link: "/Footer" }}
-        buttonTwo={{ text: "LITHIUM SOLUTION", link: "/" }}
+        buttonOne= {{ text: "CONTACT" }}
+        buttonTwo={{ text: "LITHIUM SOLUTION", link: "/libr" }}
         headercolor="brandblack"
       />
-      
-         {/* <VideoComponent /> */}
-   
-        
-        
-        <WelcomePage
-          welcomeTitle={
-            <>
-              Welcome to <span className="text-textgreen">Battregen</span>
-              <br />
-            </>
-          }
-          subheading={<span className="text-xs font-extralight mt-0 text-white leading-none">Battregen Ltd</span>}
-          paragraph={
-            <>
-              Our Mission is to play a key role in sustainable energy future by 
-              revitalizing used batteries and promoting environmental responsibility. 
-              Our Vision is to become Africa’s foremost provider of battery regeneration solutions.
-              Our Core Values are:
-              <br />
-              <span className="font-bold">Innovation:</span> Constantly striving for technological advancements and creative 
-              solutions. <br />
-              <span className="font-bold">Sustainability:</span> Prioritizing environmental impact reduction and sustainable practices.
-              <span className="font-bold">Integrity:</span> Commitment to honesty, transparency, and ethical practices.
-            </>
-          }
-          imageSrc={welcomeimage}
-          buttonOne={{ text: "CONTACT US", link: "/" }}
-          headercolor="white"
-        />
-        <CardSection
-         />
-       <BsiContainer 
-       sectionTitle="Beyond Industrial Batteries: Introducing BSI Micromobility Battery Refurbishment"
-       paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
+
+       <VideoComponent />   
+      <WelcomePage
+        welcomeTitle={
+          <>
+            Welcome to <span className="text-textgreen">Battregen</span>
+            <br />
+          </>
+        }
+        subheading={<span className="text-xs font-extralight mt-0 text-white leading-none">Battregen Ltd</span>}
+        paragraph={
+          <>
+            Our Mission is to play a key role in sustainable energy future by
+            revitalizing used batteries and promoting environmental responsibility.
+            Our Vision is to become Africa’s foremost provider of battery regeneration solutions.
+            Our Core Values are:
+            <br />
+            <span className="font-bold">Innovation:</span> Constantly striving for technological advancements and creative
+            solutions. <br />
+            <span className="font-bold">Sustainability:</span> Prioritizing environmental impact reduction and sustainable practices.
+            <span className="font-bold">Integrity:</span> Commitment to honesty, transparency, and ethical practices.
+          </>
+        }
+        imageSrc={welcomeimage}
+        buttonOne={{ text: "CONTACT US", link: "/" }}
+        headercolor="white"
       />
-      <Gallery />
-      <Footer />
       
+
+
+
+     
+      <CardSection
+      />
+      <BsiContainer
+        sectionTitle="Beyond Industrial Batteries: Introducing BSI Micromobility Battery Refurbishment"
+        paragraph="Our mission is to play a key role in sustainable energy future by revitalizing used batteries and promoting environmental responsibility."
+      />
+      <Gallery 
+      buttonOne={{ text: "VIEW GALLERY", link: "/gallery" }}
+      />
+      <Footer  />
+
     </div>
   );
 }

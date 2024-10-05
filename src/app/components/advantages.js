@@ -4,11 +4,11 @@ import bullet from "../assets/bullet.svg"; // Adjust the path as necessary
 
 const Advantage = ({ welcomeTitle, paragraph, imageSrc, subhead, welcomecolor }) => {
   return (
-    <div className="w-full flex justify-center bg-brandgreen px-4 text-black py-12">
+    <div className="w-full flex justify-center bg-brandgreen py-14 px-4 text-black pt-12 mt-6 lg:mt-0 md:mt-0">
       <div className="grid grid-cols-1 w-full gap-4 md:w-4/5 md:grid-cols-2">
         
         {/* Top - Image */}
-        <div className="flex justify-center items-center mb-4 md:mb-0">
+        <div className="flex justify-center items-center md:mb-0">
           {imageSrc && (
             <Image src={imageSrc} alt={welcomeTitle} className="max-w-full h-auto" />
           )}

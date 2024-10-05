@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import logo from "../assets/logo.png";
-import { animateScroll as scroll } from 'react-scroll';
+import {animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ backgroundcolor, navcolor }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
   };
 
   return (
-    <div className={`w-full bg-white flex items-center justify-center px-2 md:px-0 ${backgroundcolor}`}>
+    <div className={`w-full bg-brandblack flex items-center justify-center px-2 md:px-0 ${backgroundcolor}`}>
       <nav className={`bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ${navcolor}`}>
         <div className="w-full px-2 sm:px-6 lg:pr-2 lg:pl-10">
           <div className="relative flex items-center justify-between h-16">
@@ -65,16 +65,14 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
             <div className="hidden lg:flex items-center justify-evenly space-x-8">
               {['/', '/about', '/solution', '/career', '/gallery'].map((path) => (
                 <Link key={path} href={path}>
-                  <span className={`text-xs font-normal ${isActive(path) ? 'text-brandgreen' : 'text-white'}`}>
-                    {path === '/' ? 'HOME' : path.substring(1).toUpperCase()}
-                  </span>
+                  <span className={`text-xs font-normal text-white ${isActive(path) ? 'text-brandgreen' : ''}`}>{path === '/' ? 'HOME' : path.substring(1).toUpperCase()}</span>
                 </Link>
               ))}
             </div>
 
             {/* Contact Button */}
             <div className="hidden lg:block">
-              <button onClick={scrollToBottom} className=" flex-nowrap bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full">
+              <button onClick={scrollToBottom} className="bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full">
                 CONTACT US
               </button>
             </div>
@@ -91,7 +89,7 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
                 </span>
               </Link>
             ))}
-            <button onClick={scrollToBottom} className="block flex-nowrap w-full text-left bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full mt-4">
+            <button onClick={scrollToBottom} className="block w-full text-left bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full mt-4">
               CONTACT US
             </button>
           </div>

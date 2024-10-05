@@ -50,3 +50,10 @@
   justify-content: center;
   color: white; /* Optional: text color for better visibility */
 }
+a {
+  color: white !important;
+}
+
+a :active{
+  color: orangered !important
+}
