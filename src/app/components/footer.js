@@ -14,9 +14,9 @@ function Footer() {
   };
 
   return (
-    <div className='w-full flex flex-col lg:gap-4 relative bg-white py-5 lg:pt-28 md:w-4/5 text-black h-auto'>
+    <div className='w-full flex flex-col lg:gap-4 relative bg-white py-5 lg:pt-28 md:w-5/5 text-black h-auto'>
       {/* Image Gallery */}
-      <div className='grid grid-cols lg:grid-cols-2 gap-10 px-4 pb-10 lg:px-28 md:px-4'>
+      <div className='grid grid-cols lg:grid-cols-2 gap-10 px-4 pb-10 lg:px-36 md:px-24'>
         <div className='flex flex-col'>
           
           <div className='grid lg:grid-cols-2 lg:gap-4 text-xs'>
@@ -59,7 +59,7 @@ function Footer() {
             <label htmlFor="phone" className='text-xs pb-1'>Phone Number</label>
             <input type="text" id="phone" className='mb-2 p-2 rounded border border-inputfieldstroke bg-inputfield text-inputfieldtext' placeholder='Your Phone Number' required />
 
-            <button type="submit" className="flex-nowrap text-white px-4 py-3 rounded-full text-xs w-28 bg-black">
+            <button type="submit" className="flex-nowrap text-white px-4 py-3 rounded-full text-xs w-40 bg-black">
               Send Message
             </button>
           </form>
@@ -69,7 +69,7 @@ function Footer() {
         <p>Copyright © Day2DayPro 2022. All rights reserved</p>
       </div>
 
-      <button onClick={scrollToTop} className="absolute -bottom-8 left-2 lg:bottom-4 lg:left-8 " aria-label="Scroll to top">
+      <button onClick={scrollToTop} className="absolute bottom-5 left-2 lg:bottom-4 lg:left-8 " aria-label="Scroll to top">
         <svg width="40" height="40" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="2" y="2" width="61" height="61" rx="30.5" fill="#292929" />
           <rect x="1.44545" y="1.44545" width="62.1091" height="62.1091" rx="31.0545" stroke="#5F7495" strokeOpacity="0.8" strokeWidth="1.10909" />

@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
-//import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
-import {Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import {animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useRouter } from 'next/navigation';
 
 const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, headercolor, textcolor,backgroundcolor,paddingBottom }) => {
@@ -12,9 +12,9 @@ const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, hea
   };
   
   return (
-    <div className={`w-full flex justify-center lg:herobanner pb-48 lg:pb-10 md:pb-10 md:mb-1 lg:mb-0 md:h-auto ${paddingBottom} ${backgroundcolor}`}>
-      <div className="hero-section grid grid-cols-1  md:grid-cols-2 w-full md:w-4/5 md:pb-44 pt-2 md:pt-7 px-4 md:px-0">
-        <div className="col-span-1 pt-2 lg:pt-28">
+    <div className={`w-full flex justify-center lg:herobanner pb-48 lg:pb-18  md:pb-44 lg:mb-0 md:h-auto ${backgroundcolor}`}>
+      <div className="hero-section grid grid-cols-1  md:grid-cols-2 w-full md:w-4/5 lg:pb-2 pt-2 md:pt-7 px-4 md:px-0">
+        <div className="col-span-1 pt-2 lg:pt-8">
           <h1 className={`text-3xl font-bold mb-4 leading-normal ${headercolor}`}>{heroTitle}</h1>
           <p className={`text-sm mb-6 leading-relaxed ${textcolor}`}>{paragraph}</p>
           <div className="flex space-x-4">
@@ -34,9 +34,9 @@ const HeroSection = ({ heroTitle, paragraph, imageSrc, buttonOne, buttonTwo, hea
             )}
           </div>
         </div>
-        <div className="col-span-1 pt-10">
+        <div className="col-span-1">
           {imageSrc && (
-            <div className="mb-4 flex justify-center">
+            <div className=" flex justify-center">
               <Image src={imageSrc} alt={heroTitle}  />
             </div>
           )}

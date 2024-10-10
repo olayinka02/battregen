@@ -32,7 +32,7 @@ const CardSection = () => {
 
     return (
         <section className="  my-28 lg:px-12 lg:mx-16 md:mx-22 md:px-24">
-            <div className="w-full px-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3  ">
+            <div className="w-full px-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-8 gap-3  ">
                 {cardsData.map((card, index) => (
                     <Card
                         key={index}

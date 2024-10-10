@@ -8,8 +8,8 @@ const RoleCard = ({ header, paragraph,Read }) => {
             
             <div className="py-4">
                 <h2 className="text-sm text-roltext font-medium mb-1">{header}</h2>
-                <p className="text-cardtext text-xs pt-3">{paragraph}</p>
-                <a href='/info' className="text-roletext text-xs pt-6">{Read}</a>
+                <p className="text-cardtext text-xs py-4">{paragraph}</p>
+                <a href='/info' className="text-roletext text-xs pt-12">{Read}</a>
             </div>
         </div>
     );

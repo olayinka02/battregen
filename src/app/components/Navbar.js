@@ -5,9 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import logo from "../assets/logo.png";
-import { animateScroll as scroll } from 'react-scroll';
+import {animateScroll as scroll } from 'react-scroll';
 
-const Navbar = ({ backgroundcolor, navcolor }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
@@ -22,8 +22,8 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
   };
 
   return (
-    <div className={`w-full bg-white flex items-center justify-center px-2 md:px-0 ${backgroundcolor}`}>
-      <nav className={`bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ${navcolor}`}>
+    <div className="w-full bg-white flex items-center justify-center px-2 md:px-0 border-brandblack">
+      <nav className="bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ">
         <div className="w-full px-2 sm:px-6 lg:pr-2 lg:pl-10">
           <div className="relative flex items-center justify-between h-16">
             {/* Logo */}
@@ -74,7 +74,7 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
 
             {/* Contact Button */}
             <div className="hidden lg:block">
-              <button onClick={scrollToBottom} className=" flex-nowrap bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full">
+              <button onClick={scrollToBottom} className="bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full">
                 CONTACT US
               </button>
             </div>
@@ -91,7 +91,7 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
                 </span>
               </Link>
             ))}
-            <button onClick={scrollToBottom} className="block flex-nowrap w-full text-left bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full mt-4">
+            <button onClick={scrollToBottom} className="block w-full text-left bg-brandwhite px-4 py-2 text-xs font-medium text-brandblack bg-brandgreen rounded-full mt-4">
               CONTACT US
             </button>
           </div>

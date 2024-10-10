@@ -66,11 +66,11 @@ const Role = () => {
           Each 2v cell is treated as an independent unit, allowing for precise quality.</p>
           
          </div>
-            <div className="w-full py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3  ">
+            <div className="w-full py-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4  ">
                 {cardsData.map((card, index) => (
                     <RoleCard
                         key={index}
-                        //image={card.image}
+                        
                         header={card.header}
                         paragraph={card.paragraph}
                         Read={card.Read}

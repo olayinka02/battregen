@@ -22,8 +22,8 @@ const Navbar = ({ backgroundcolor, navcolor }) => {
   };
 
   return (
-    <div className={`w-full bg-brandblack flex items-center justify-center px-2 md:px-0 ${backgroundcolor}`}>
-      <nav className={`bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ${navcolor}`}>
+    <div className="w-full bg-brandblack flex items-center justify-center px-2 md:px-0 border-brandblack">
+      <nav className="bg-brandblack w-full mt-4 md:w-4/5 rounded-2xl border border-cardoutline md:rounded-3xl lg:rounded-full ">
         <div className="w-full px-2 sm:px-6 lg:pr-2 lg:pl-10">
           <div className="relative flex items-center justify-between h-16">
             {/* Logo */}

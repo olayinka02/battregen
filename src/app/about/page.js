@@ -52,7 +52,7 @@ export default function About() {
       <Gallery
         buttonOne={{ text: "VIEW GALLERY", link: "/gallery" }}
       />
-      <Footer />
+      <Footer  />
 
     </div>
   );
